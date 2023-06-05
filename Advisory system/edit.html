@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Q&amp;A</title>
+	<style>
+		body {
+			background-color: #222222;
+		}
+		h1 {
+			text-align: center;
+			color: white;
+		}
+		#qa-list {
+			margin: 50px;
+		}
+		.question {
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			margin: 10px;
+			cursor: pointer;
+		}
+		.answer {
+			display: none;
+			margin-left: 20px;
+			margin-bottom: 20px;
+			padding-left: 10px;
+			border-left: 2px solid white;
+			color: white;
+		}
+	</style>
+	<script>
+		function toggleAnswer(id) {
+			var answer = document.getElementById(id);
+			answer.style.display = (answer.style.display == "none") ? "block" : "none";
+		}
+	</script>
+</head>
+<body>
+	<h1>Edit Q&amp;A</h1>
+	<div id="qa-list">
+		<div class="container">
+			<div class="question" onclick="toggleAnswer('q1')">What do I need to do to declare a major?</div>
+			<div class="answer" id="q1">To declare a major, you need to meet with an advisor in the department of the major you want to declare. They will go over the requirements and help you fill out the necessary paperwork.</div>
+		</div>
+		<div class="container">
+			<div class="question" onclick="toggleAnswer('q2')">What classes do I need to take to graduate?</div>
+			<div class="answer" id="q2">The specific classes you need to take to graduate depend on your major and any minor or concentration you may have. You can find a list of the required courses in the course catalog or by meeting with your academic advisor.</div>
+		</div>
+		<div class="container">
+			<div class="question" onclick="toggleAnswer('q3')">What should I do if I'm struggling in a class?</div>
+			<div class="answer" id="q3">If you're struggling in a class, the first step is to talk to your professor or TA. They may be able to offer you extra help or advice on how to improve. You can also seek out tutoring or academic support services on campus.</div>
+		</div>
+		<div class="container">
+			<div class="question" onclick="toggleAnswer('q4')">How do I know which classes fulfill my general education requirements?</div>
+			<div class="answer" id="q4">You can find a list of the general education requirements and the classes that fulfill them in the course catalog. Your academic advisor can also help you determine which classes you still need to take to fulfill your requirements.</div>
+		</div>
+		<div class="container">
+			<div class="question" onclick="toggleAnswer('q5')">How can I change my schedule after the add/drop deadline?</div>
+			<div class="answer" id="q5">After the add/drop deadline, you can only change your schedule under certain circumstances, such as a medical

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> advisee session</title>
+    <link rel="stylesheet" href="advisee.css">
+</head>
+<body>
+    <div class="links">
+        <ul>
+          <li><a href="#">join us</a></li>
+          <li><a href="#">students</a></li>
+          <li><a href="#">staff</a></li>
+          <li><a href="#">procurement</a></li>
+          <li><a href="#">careers </a></li>
+          <li>donate</li>
+          <li>alumni</li>
+        </ul>
+      </div>
+      <header>
+        <div class="logo">
+          <img itemprop="image" src="https://www.must.ac.ke/wp-content/uploads/2022/07/logo4_png_version.fw_.png" 
+          width="360" height="100" alt="Mobile Logo">
+        </div>
+        <nav >
+          <div class="nav-links">
+            <ul>
+              <li><a href="login.html">home</a></li>
+              <li><a href="#">about must</a></li>
+              <li><a href="#">academic</a></li>
+              <li><a href="#">programs</a></li>
+              <li><a href="#">research</a></li>
+              <li><a href="#">library</a></li>
+              <li><a href="#">E-learnig</a></li>
+              <li><a href="#">services</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    
+      <section class="main">
+        <div class="hold-meeting">
+            <div class="general-meet">
+                <form action="general advisory.html">
+                    <h3>host a meeting</h3>
+                    <label for="general-link">
+                    meeting-link
+                    </label>
+                    <input type="text" id="general-link">
+                    <input type="submit" value="Click" onclick="getlink()">
+                    
+                </form>
+            </div>
+            <div class="private-meeting">
+               <form action="personal.html">
+                <label for="meeting-link">
+                    private-link
+                </label>
+                <input type="text" id="general-link">
+               </form>
+            </div>
+
+        </div>
+       <!-- <div class="schedule-meeting">
+            <form action="general advisory.html">
+                <h3>schedule a meeting</h3>
+                <input type="text " id="sched-meet">
+            </form>
+        </div>-->
+        <div class="meet-schedule">
+          <h1>Schedule Meetings</h1>
+
+        <form action="">
+            <input type="text" name="text" id="txt" required>
+            <button type="submit" class="btn-list" onchange="getlink()">
+              post  
+            </button>           
+        </form>
+        <div class="container">
+            <ul>
+                <!--<li>DEV AT <span>x</span></li>
+                <li>DEV AT <span>x</span></li>
+                -->
+            </ul>
+        </div>
+        </div>
+        <div class="requested-meeting">
+            <form action="personal.html">
+                <h3>requested private meeting</h3>
+                <input type="text" priv-meet>
+            </form>
+
+        </div>
+
+      </section>
+
+    <script src="advisee.js"></script>
+</body>
+</html>

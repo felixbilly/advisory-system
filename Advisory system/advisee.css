@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: beige;
+  }
+  .links
+  {
+    width: 100%;
+    padding-left: 50px;
+    height: 5vh;
+    display: flex;
+    background-color: rgb(255, 153, 0);
+  }
+  
+  .links ul li{
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+  
+  }
+  .links ul li a
+  {
+    display: inline-block;
+    font-weight: bold;
+  }
+  header
+  {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: #fff;
+  }
+  .logo
+  {
+    display: flexbox;
+    align-items: center;
+    padding: 10px;
+  
+  }
+  .logo h1
+  {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: green;
+  }
+  .logo h1 span{
+    font-family: serif;
+  }
+  .nav-links
+  {
+    background: fixed;
+    margin: 20px;
+    padding-top: 20px;
+    padding: 5px;
+    float:right;
+    
+    
+  }
+  .nav-links ul li{
+    display: inline-block;
+    align-content: center;
+  }
+  
+  .nav-links ul li a{
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .nav-links ul li a:hover
+  {
+    color: rgb(10, 223, 152);
+    transition: 3s;
+  }
+  
+  section
+  {
+    width: 100%;
+    height: fit-content;
+    background-color: burlywood;
+    display: inline-flex;
+    
+  }
+  .hold-meeting
+  {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(2, 236, 253);
+    margin: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 3px solid blue;
+    border-radius: 10px;
+    
+
+  }
+  .general-meet
+  {
+    width: 100%;
+
+  }
+  /*
+  .schedule-meeting
+  {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(2, 236, 253);
+    margin: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 3px solid blue;
+    border-radius: 10px;
+    
+
+  }*/
+.meet-schedule
+{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meet-schedule h1
+{
+  color: blue;
+  margin-top: 5px;
+}
+.meet-schedule form
+{
+  margin-top: 5px;
+  background: bisque;
+  box-shadow: -3px 6px 4px #222;
+}
+.meet-schedule form input
+{
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+}
+.meet-schedule form button
+{
+  width: 50px;
+  height: 40px;
+  border: none;
+  background: teal;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.meet-schedule .container
+{
+  margin-top: 20px;
+}
+.meet-schedule .container ul
+{
+  width: 500px;
+}
+.meet-schedule .container ul li
+{
+  width: 100%;
+  background: beige;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  margin: 5px 0;
+  box-shadow: -3px 6px 4px #222;
+  transition: .5s linear;
+}
+.meet-schedule .container ul li span
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  text-align: center;
+  background: #e00;
+}
+  .requested-meeting
+  {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(2, 236, 253);
+    margin: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 3px solid blue;
+    border-radius: 10px;
+    
+
+  }

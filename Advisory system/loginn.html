@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      background-color: #222222;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      margin-top: 50px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    label, input {
+      display: block;
+      width: 300px;
+      margin-bottom: 20px;
+      color: white;
+    }
+    input[type="text"], input[type="password"] {
+      background-color: #333333;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #0059b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login to Advisor</h1>
+  <form action="advisor.html" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>
